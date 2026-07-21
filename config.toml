@@ -1,0 +1,21 @@
+[theme]
+# Primary branding color for buttons, links, etc.
+primaryColor="#FA9200"
+
+# Background color for the main content area (white for light, dark gray for dark)
+backgroundColor="#FFFFFF"
+
+# Background color for the sidebar and menu (light gray for light, black for dark)
+secondaryBackgroundColor="#F0F2F6"
+
+# Color for text and titles
+textColor="#262730"
+
+# Font used in the application
+font="sans serif"
+
+# --- Dark Theme Configuration (Optional, but recommended for better contrast) ---
+# Uncomment these lines if you want to explicitly define the dark colors:
+# [theme.darkMode]
+# backgroundColor="#0E1117"
+# secondaryBackgroundColor="#262730"
