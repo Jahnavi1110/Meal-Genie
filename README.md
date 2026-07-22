@@ -1,187 +1,390 @@
 # 🍽️ Meal Genie
 
-> **Your AI-Powered Personal Cookbook**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit">
+  <img src="https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+</p>
 
-Meal Genie is an intelligent recipe recommendation web application that helps users discover delicious meals based on their preferences and available ingredients. Instead of endlessly searching for recipes, Meal Genie provides personalized suggestions through a clean, interactive, and user-friendly interface.
-
----
-
-## ✨ Features
-
-* 🤖 AI-powered recipe recommendations
-* 🔍 Search recipes by ingredients
-* 🍛 Browse a wide variety of cuisines and dishes
-* ❤️ Save your favorite recipes
-* 👤 User authentication (Login & Registration)
-* 🛒 Wishlist and Cart functionality
-* 📱 Responsive and modern UI
-* 🗄️ MySQL database integration
-* ⚡ Fast and lightweight Flask backend
+<p align="center">
+<b>Your AI-Powered Personal Cookbook</b><br>
+Generate delicious recipes instantly using Google Gemini AI based on ingredients, cuisines, or cravings.
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+# 📖 About The Project
 
-### Frontend
+Meal Genie is an **AI-powered recipe generation web application** that helps users discover personalized recipes in seconds.
 
-* HTML5
-* CSS3
-* JavaScript
+Instead of searching through hundreds of websites, users simply enter ingredients or meal preferences, and **Google Gemini AI** generates a complete recipe including ingredients, cooking instructions, preparation time, serving size, and helpful cooking tips.
 
-### Backend
-
-* Python
-* Flask
-
-### Database
-
-* MySQL
-
-### Tools
-
-* PyCharm
-* Git
-* GitHub
+The application also stores generated recipes in a **MySQL database**, allowing users to revisit their favorite meals while providing a modern, responsive, and interactive user experience through **Streamlit**.
 
 ---
 
-## 📂 Project Structure
+# ✨ Features
+
+### 🤖 AI Recipe Generation
+- Generate recipes using Google's Gemini AI
+- Personalized recipe suggestions
+- Natural language understanding
+
+### 🥘 Smart Recipe Creation
+- Ingredient-based recipes
+- Cuisine-specific recipes
+- Meal type recommendations
+- Cooking instructions
+- Preparation & cooking time
+- Serving size
+
+### 🎨 Beautiful User Interface
+- Modern Apple-inspired design
+- Responsive layout
+- Interactive cards
+- Smooth animations
+- Custom CSS styling
+
+### 🌗 Personalization
+- Dark Mode
+- Light Mode
+- Adjustable Font Size
+- User-friendly interface
+
+### 📚 Recipe Management
+- Save generated recipes
+- Recipe history
+- View previously generated recipes
+- Organized storage using MySQL
+
+### ⚡ Performance
+- Fast AI response
+- Lightweight Streamlit application
+- Easy deployment
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- Streamlit
+- HTML Components
+- CSS
+
+## Backend
+
+- Python
+
+## Artificial Intelligence
+
+- Google Gemini AI (Gemini 2.5 Flash)
+
+## Database
+
+- MySQL
+
+## Python Libraries
+
+- Streamlit
+- google-genai
+- PyMySQL
+- mysql-connector-python
+
+---
+
+# 📂 Project Structure
 
 ```
-MealGenie/
+Meal-Genie/
 │
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── templates/
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── product.html
-│   ├── wishlist.html
-│   ├── cart.html
-│   └── ...
-│
-├── app.py
+├── app.py                 # Main Streamlit Application
+├── database.py            # Database Functions
 ├── requirements.txt
-├── database.sql
-└── README.md
+├── README.md
+│
+├── assets/
+│     ├── images/
+│     └── icons/
+│
+├── database/
+│     └── meal_genie.sql
+│
+└── screenshots/
+      ├── home.png
+      ├── recipe.png
+      ├── history.png
+      └── darkmode.png
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-### Clone the Repository
+## Prerequisites
+
+Before running the project, install:
+
+- Python 3.10 or above
+- MySQL Server
+- Git
+
+---
+
+# Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/MealGenie.git
+git clone https://github.com/YOUR_USERNAME/Meal-Genie.git
+
+cd Meal-Genie
 ```
 
-### Navigate into the Project
+---
 
-```bash
-cd MealGenie
-```
+# Create a Virtual Environment
 
-### Create a Virtual Environment
+## Windows
 
 ```bash
 python -m venv venv
 ```
 
-### Activate the Environment
-
-Windows
+Activate it:
 
 ```bash
 venv\Scripts\activate
 ```
 
-macOS/Linux
+---
+
+## macOS / Linux
+
+```bash
+python3 -m venv venv
+```
+
+Activate:
 
 ```bash
 source venv/bin/activate
 ```
 
-### Install Dependencies
+---
+
+# Install Required Libraries
+
+### Method 1 (Recommended)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Configure the Database
+---
 
-1. Install MySQL.
-2. Create a new database.
-3. Import the provided SQL file.
-4. Update the database credentials inside `app.py`.
-
-### Run the Application
+### Method 2 (Manual Installation)
 
 ```bash
-python app.py
-```
-
-The application will be available at:
-
-```
-http://127.0.0.1:5000
+pip install streamlit
+pip install google-genai
+pip install PyMySQL
+pip install mysql-connector-python
 ```
 
 ---
 
-## 🎯 Future Enhancements
+# Configure Google Gemini API
 
-* AI chatbot for meal suggestions
-* Nutritional analysis
-* Weekly meal planner
-* Recipe rating and reviews
-* Personalized recommendations using machine learning
-* Dark mode
-* Mobile application
-* Shopping list generation
+Create an API Key from:
 
----
+https://aistudio.google.com/app/apikey
 
-## 📸 Screenshots
+Do **NOT** hardcode the key inside your project.
 
-Add screenshots of:
+Instead create a `.env` file:
 
-* Home Page
-* Login Page
-* Recipe Recommendation
-* Recipe Details
-* Wishlist
-* Cart
-* User Dashboard
+```
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+Or use Streamlit Secrets.
 
 ---
 
-## 🤝 Contributing
+# Configure MySQL
 
-Contributions are welcome!
+Create a database:
+
+```sql
+CREATE DATABASE meal_genie;
+```
+
+Update your database credentials inside the project:
+
+```python
+host="localhost"
+user="root"
+password="YOUR_PASSWORD"
+database="meal_genie"
+```
+
+---
+
+# Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will automatically open in your browser.
+
+Default URL:
+
+```
+http://localhost:8501
+```
+
+---
+
+# Screenshots
+
+Add screenshots inside the `screenshots` folder.
+
+Example:
+
+```
+screenshots/
+│
+├── home.png
+├── recipe.png
+├── history.png
+├── darkmode.png
+```
+
+Then display them like this:
+
+```markdown
+## Home Page
+
+![Home](screenshots/home.png)
+
+## Generated Recipe
+
+![Recipe](screenshots/recipe.png)
+
+## Dark Mode
+
+![Dark](screenshots/darkmode.png)
+```
+
+---
+
+# Future Enhancements
+
+- Voice-based recipe generation
+- Nutrition calculator
+- Calorie estimation
+- Weekly meal planner
+- Shopping list generation
+- Image generation for recipes
+- Recipe sharing
+- User authentication
+- Cloud database integration
+- Docker deployment
+- Multi-language support
+
+---
+
+# Troubleshooting
+
+### ModuleNotFoundError
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### MySQL Connection Error
+
+- Check if MySQL Server is running.
+- Verify username and password.
+- Ensure the database exists.
+
+---
+
+### Gemini API Error
+
+- Verify your API key.
+- Ensure billing/quota is available.
+- Check your internet connection.
+
+---
+
+# Contributing
+
+Contributions are always welcome.
 
 1. Fork the repository.
-2. Create a feature branch.
+2. Create a new feature branch.
+
+```
+git checkout -b feature-name
+```
+
 3. Commit your changes.
-4. Push the branch.
-5. Open a Pull Request.
+
+```
+git commit -m "Added new feature"
+```
+
+4. Push to GitHub.
+
+```
+git push origin feature-name
+```
+
+5. Create a Pull Request.
 
 ---
 
-## 👩‍💻 Author
+# License
 
-**Jahnavi Modi**
+This project is licensed under the MIT License.
+
+---
+
+# Author
+
+### 👩‍💻 Jahnavi Modi
 
 Computer Science Engineering Student
 
-Passionate about AI, Full Stack Development, Product Design, and building user-centric applications.
+Interested in:
+
+- Artificial Intelligence
+- Full Stack Development
+- Product Design
+- UI/UX
+- Machine Learning
+
+GitHub: https://github.com/YOUR_USERNAME
+
+LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
 
 ---
 
-## ⭐ Show Your Support
+# ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub. It helps others discover the project and motivates future improvements.
+If you found this project helpful, consider giving it a ⭐ on GitHub.
+
+It motivates further development and helps others discover the project.
+
+---
+
+<p align="center">
+Made with ❤️ using Python, Streamlit, MySQL and Google Gemini AI
+</p>
