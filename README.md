@@ -1,68 +1,74 @@
 # 🍽️ Meal Genie
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit">
-  <img src="https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google">
-  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white">
+
+<img src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
+
+<img src="https://img.shields.io/badge/Google-Gemini%20AI-4285F4?style=for-the-badge&logo=google&logoColor=white">
+
+<img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+
 </p>
 
 <p align="center">
-<b>Your AI-Powered Personal Cookbook</b><br>
-Generate delicious recipes instantly using Google Gemini AI based on ingredients, cuisines, or cravings.
+
+<b>AI-Powered Recipe Generator built using Streamlit, Google Gemini AI and MySQL.</b>
+
+Generate personalized recipes, save them to your cookbook, revisit previous recipes, and enjoy a modern responsive interface with light and dark themes.
+
 </p>
 
 ---
 
-# 📖 About The Project
+# 📖 About the Project
 
-Meal Genie is an **AI-powered recipe generation web application** that helps users discover personalized recipes in seconds.
+Meal Genie is an AI-powered recipe generation application that helps users create recipes instantly using Google Gemini AI.
 
-Instead of searching through hundreds of websites, users simply enter ingredients or meal preferences, and **Google Gemini AI** generates a complete recipe including ingredients, cooking instructions, preparation time, serving size, and helpful cooking tips.
+Instead of manually searching for recipes, users simply enter their available ingredients or cooking preferences and the application generates a complete recipe including:
 
-The application also stores generated recipes in a **MySQL database**, allowing users to revisit their favorite meals while providing a modern, responsive, and interactive user experience through **Streamlit**.
+- Recipe title
+- Ingredients
+- Step-by-step cooking instructions
+- Preparation and cooking time
+- Serving size
+- Cooking tips
+
+Generated recipes are stored in a MySQL database so they can be viewed later from the application's recipe history.
+
+The application is built entirely using Streamlit with custom HTML and CSS for an interactive and modern user experience.
 
 ---
 
 # ✨ Features
 
 ### 🤖 AI Recipe Generation
-- Generate recipes using Google's Gemini AI
+
+- Recipe generation using Google Gemini AI
 - Personalized recipe suggestions
-- Natural language understanding
-
-### 🥘 Smart Recipe Creation
-- Ingredient-based recipes
-- Cuisine-specific recipes
-- Meal type recommendations
-- Cooking instructions
-- Preparation & cooking time
-- Serving size
-
-### 🎨 Beautiful User Interface
-- Modern Apple-inspired design
-- Responsive layout
-- Interactive cards
-- Smooth animations
-- Custom CSS styling
-
-### 🌗 Personalization
-- Dark Mode
-- Light Mode
-- Adjustable Font Size
-- User-friendly interface
+- Ingredient-based recipe generation
 
 ### 📚 Recipe Management
-- Save generated recipes
-- Recipe history
+
+- Save recipes into MySQL
 - View previously generated recipes
-- Organized storage using MySQL
+- Persistent recipe history
+
+### 🎨 User Interface
+
+- Streamlit-based web application
+- Custom HTML templates
+- Custom CSS styling
+- Responsive interface
+- Dark Mode
+- Light Mode
 
 ### ⚡ Performance
-- Fast AI response
-- Lightweight Streamlit application
-- Easy deployment
+
+- Fast recipe generation
+- Lightweight architecture
+- Easy local deployment
 
 ---
 
@@ -71,7 +77,7 @@ The application also stores generated recipes in a **MySQL database**, allowing 
 ## Frontend
 
 - Streamlit
-- HTML Components
+- HTML
 - CSS
 
 ## Backend
@@ -80,78 +86,105 @@ The application also stores generated recipes in a **MySQL database**, allowing 
 
 ## Artificial Intelligence
 
-- Google Gemini AI (Gemini 2.5 Flash)
+- Google Gemini AI
+- Gemini 2.5 Flash
 
 ## Database
 
 - MySQL
 
-## Python Libraries
+---
 
-- Streamlit
+# 📦 Python Libraries
+
+- streamlit
 - google-genai
 - PyMySQL
 - mysql-connector-python
+- python-dotenv
 
 ---
 
-# 📂 Project Structure
+# 🗂 Project Structure
 
 ```
-Meal-Genie/
+Meal-Genie-main
 │
-├── app.py                 # Main Streamlit Application
-├── database.py            # Database Functions
-├── requirements.txt
-├── README.md
-│
-├── assets/
-│     ├── images/
-│     └── icons/
-│
-├── database/
-│     └── meal_genie.sql
-│
-└── screenshots/
-      ├── home.png
-      ├── recipe.png
-      ├── history.png
-      └── darkmode.png
+├── .env.example          # Sample environment variables
+├── .gitignore            # Git ignore rules
+├── README.md             # Project documentation
+├── app.py                # Main Streamlit application
+├── config.toml           # Streamlit configuration
+├── html_templates.py     # HTML templates used by the UI
+├── main.py               # Console-based recipe generator
+├── requirements.txt      # Project dependencies
+├── style.css             # Custom styling
+└── test_db.py            # Database connectivity test
 ```
 
 ---
 
-# 🚀 Getting Started
+# 🧠 Project Mind Map
 
-## Prerequisites
+```
+Meal Genie
+│
+├── User Interface
+│   ├── Streamlit
+│   ├── HTML Templates
+│   └── CSS Styling
+│
+├── AI Engine
+│   └── Google Gemini 2.5 Flash
+│
+├── Database
+│   └── MySQL
+│
+├── Configuration
+│   ├── .env
+│   ├── config.toml
+│   └── .gitignore
+│
+├── Main Files
+│   ├── app.py
+│   ├── main.py
+│   └── test_db.py
+│
+└── Documentation
+    └── README.md
+```
 
-Before running the project, install:
+---
+
+# 💻 System Requirements
 
 - Python 3.10 or above
 - MySQL Server
-- Git
+- Git (optional but recommended)
 
 ---
 
-# Clone the Repository
+# 🚀 Installation
+
+## 1. Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Meal-Genie.git
 
-cd Meal-Genie
+cd Meal-Genie-main
 ```
 
 ---
 
-# Create a Virtual Environment
+## 2. Create a Virtual Environment
 
-## Windows
+### Windows
 
 ```bash
 python -m venv venv
 ```
 
-Activate it:
+Activate it
 
 ```bash
 venv\Scripts\activate
@@ -159,23 +192,27 @@ venv\Scripts\activate
 
 ---
 
-## macOS / Linux
+### macOS
 
 ```bash
 python3 -m venv venv
-```
 
-Activate:
-
-```bash
 source venv/bin/activate
 ```
 
 ---
 
-# Install Required Libraries
+### Linux
 
-### Method 1 (Recommended)
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -183,55 +220,44 @@ pip install -r requirements.txt
 
 ---
 
-### Method 2 (Manual Installation)
+# 🔐 Environment Variables
 
-```bash
-pip install streamlit
-pip install google-genai
-pip install PyMySQL
-pip install mysql-connector-python
+Create a file named
+
 ```
+.env
+```
+
+Copy the following:
+
+```
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+
+DB_HOST=127.0.0.1
+DB_USER=root
+DB_PASSWORD=YOUR_PASSWORD
+DB_NAME=mygenie
+```
+
+Replace the placeholders with your own credentials.
 
 ---
 
-# Configure Google Gemini API
+# 🗄 MySQL Setup
 
-Create an API Key from:
-
-https://aistudio.google.com/app/apikey
-
-Do **NOT** hardcode the key inside your project.
-
-Instead create a `.env` file:
-
-```
-GEMINI_API_KEY=YOUR_API_KEY
-```
-
-Or use Streamlit Secrets.
-
----
-
-# Configure MySQL
-
-Create a database:
+Create the database
 
 ```sql
-CREATE DATABASE meal_genie;
+CREATE DATABASE mygenie;
 ```
 
-Update your database credentials inside the project:
-
-```python
-host="localhost"
-user="root"
-password="YOUR_PASSWORD"
-database="meal_genie"
-```
+The application will use the credentials provided inside your `.env` file.
 
 ---
 
-# Run the Application
+# ▶️ Running the Application
+
+Start the Streamlit application
 
 ```bash
 streamlit run app.py
@@ -239,7 +265,7 @@ streamlit run app.py
 
 The application will automatically open in your browser.
 
-Default URL:
+Default URL
 
 ```
 http://localhost:8501
@@ -247,144 +273,159 @@ http://localhost:8501
 
 ---
 
-# Screenshots
+# 🧪 Testing Database Connection
 
-Add screenshots inside the `screenshots` folder.
+A helper file is included to verify MySQL connectivity.
 
-Example:
-
-```
-screenshots/
-│
-├── home.png
-├── recipe.png
-├── history.png
-├── darkmode.png
-```
-
-Then display them like this:
-
-```markdown
-## Home Page
-
-![Home](screenshots/home.png)
-
-## Generated Recipe
-
-![Recipe](screenshots/recipe.png)
-
-## Dark Mode
-
-![Dark](screenshots/darkmode.png)
-```
-
----
-
-# Future Enhancements
-
-- Voice-based recipe generation
-- Nutrition calculator
-- Calorie estimation
-- Weekly meal planner
-- Shopping list generation
-- Image generation for recipes
-- Recipe sharing
-- User authentication
-- Cloud database integration
-- Docker deployment
-- Multi-language support
-
----
-
-# Troubleshooting
-
-### ModuleNotFoundError
-
-Install dependencies:
+Run
 
 ```bash
+python test_db.py
+```
+
+If everything is configured correctly, a successful database connection message will be displayed.
+
+---
+
+# 🌍 Cross Platform Compatibility
+
+Meal Genie can be executed on
+
+- ✅ Windows
+- ✅ macOS
+- ✅ Linux
+
+The only requirements are:
+
+- Python
+- MySQL
+- Internet connection (for Gemini AI)
+
+---
+
+# ❗ Common Issues & Solutions
+
+## ModuleNotFoundError
+
+**Problem**
+
+```
+ModuleNotFoundError
+```
+
+**Solution**
+
+```
 pip install -r requirements.txt
 ```
 
 ---
 
-### MySQL Connection Error
+## Missing Environment Variables
 
-- Check if MySQL Server is running.
-- Verify username and password.
-- Ensure the database exists.
+**Problem**
+
+```
+API key missing
+```
+
+**Solution**
+
+Verify that your `.env` file exists and contains all required variables.
 
 ---
 
-### Gemini API Error
+## MySQL Connection Error
 
-- Verify your API key.
-- Ensure billing/quota is available.
-- Check your internet connection.
+**Problem**
+
+```
+Can't connect to MySQL server
+```
+
+**Solution**
+
+- Ensure MySQL is running.
+- Verify host, username and password.
+- Confirm the `mygenie` database exists.
 
 ---
 
-# Contributing
+## Google Gemini Authentication Error
 
-Contributions are always welcome.
-
-1. Fork the repository.
-2. Create a new feature branch.
+**Problem**
 
 ```
-git checkout -b feature-name
+Invalid API Key
 ```
 
-3. Commit your changes.
+**Solution**
 
-```
-git commit -m "Added new feature"
-```
-
-4. Push to GitHub.
-
-```
-git push origin feature-name
-```
-
-5. Create a Pull Request.
+Generate a new API key from Google AI Studio and update your `.env` file.
 
 ---
 
-# License
+## Streamlit Command Not Found
 
-This project is licensed under the MIT License.
+**Problem**
+
+```
+streamlit is not recognized
+```
+
+**Solution**
+
+Activate your virtual environment first, then run
+
+```bash
+pip install streamlit
+```
 
 ---
 
-# Author
+# 📄 Files Overview
 
-### 👩‍💻 Jahnavi Modi
+| File | Purpose |
+|-------|---------|
+| app.py | Main Streamlit application |
+| main.py | Console version of recipe generation |
+| html_templates.py | HTML templates used by the interface |
+| style.css | Custom application styling |
+| test_db.py | Database connection testing |
+| config.toml | Streamlit configuration |
+| requirements.txt | Python dependencies |
+| .env.example | Sample environment configuration |
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push your branch
+5. Open a Pull Request
+
+---
+
+# 👩‍💻 Author
+
+**Jahnavi Modi**
 
 Computer Science Engineering Student
-
-Interested in:
-
-- Artificial Intelligence
-- Full Stack Development
-- Product Design
-- UI/UX
-- Machine Learning
-
-GitHub: https://github.com/YOUR_USERNAME
-
-LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
 
 ---
 
 # ⭐ Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
-It motivates further development and helps others discover the project.
+It helps others discover the project and supports future improvements.
 
 ---
 
-<p align="center">
-Made with ❤️ using Python, Streamlit, MySQL and Google Gemini AI
-</p>
+# 📜 License
+
+This project is intended for educational and learning purposes.
