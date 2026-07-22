@@ -105,7 +105,7 @@ The application is built entirely using Streamlit with custom HTML and CSS for a
 
 ---
 
-# 🗂 Project Structure
+# 🗂 Project File Structure
 
 ```
 Meal-Genie-main
