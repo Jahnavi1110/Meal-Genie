@@ -6,7 +6,7 @@ from google.genai.errors import APIError
 # !!! CRITICAL STEP: REPLACE THIS PLACEHOLDER WITH YOUR ACTUAL, SECRET API KEY !!!
 # The key is the long string you copied from the Google AI Studio website.
 # The quotes ("") MUST stay around your key.
-API_KEY = "AIzaSyD_HpQBYtdW2nPb8Dj0NslM6b5Tpggj_lA"
+
 
 try:
     # Pass the API key directly to the client to fix the PyCharm environment loading issue
@@ -75,7 +75,5 @@ def main():
     print("==============================================")
     print(recipe_output)
     print("==============================================")
-
-
 if _name_ == "_main_":
     main()
