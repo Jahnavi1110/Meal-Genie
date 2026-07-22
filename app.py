@@ -4,6 +4,8 @@ import pymysql.cursors
 from datetime import datetime
 import html_templates
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # --- 1. PAGE CONFIG ---
 st.set_page_config(page_title="Meal Genie", layout="centered")
@@ -125,13 +127,13 @@ else:
     """, unsafe_allow_html=True)
 
 # --- 4. CONFIGURATION ---
-API_KEY = "AIzaSyD_HpQBYtdW2nPb8Dj0NslM6b5Tpggj_lA"
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 DB_CONFIG = {
-    "host": "127.0.0.1",
-    "user": "root",
-    "password": "Saibaba11",
-    "database": "mygenie",
+    "host": os.getenv("DB_HOST"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME"),
     "cursorclass": pymysql.cursors.DictCursor
 }
 
